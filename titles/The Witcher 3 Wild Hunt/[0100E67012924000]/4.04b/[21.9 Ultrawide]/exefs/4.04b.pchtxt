@@ -1,0 +1,24 @@
+@nsobid-B151A224A429F9A73ABB05C5A3DE9468D92406EA
+
+# The Witcher 3 Wild Hunt [0100E67012924000] v4.04b - 21:9
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 21:9 Aspect Ratio optimized for 3440x1440
+// Use stretch to window option
+
+@enabled
+001eb92c 26514b14 // b    0x71014bfdc4
+014bfdc4 682a40bd // ldr  s8,[x19, #0x28]
+014bfdc8 08008052 // mov  w8, #0
+014bfdcc 88F5A772 // movk w8, #0x3fac, lsl #16
+014bfdd0 0101271E // fmov s1, w8
+014bfdd4 0809211E // fmul s8, s8, s1
+014bfdd8 8866a852 // mov  w8, #0x43340000
+014bfddc d5aeb417 // b    0x71001eb930
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

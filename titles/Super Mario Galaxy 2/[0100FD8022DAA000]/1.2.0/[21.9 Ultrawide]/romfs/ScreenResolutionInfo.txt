@@ -1,0 +1,8 @@
+PeachCastleGalaxy 1.0 1.0
+IslandFleetGalaxy 1.0 1.0
+YosshiHomeGalaxy 1.0 1.0
+VsKoopaJrLv1Galaxy 1.0 1.0
+VsKoopaJrLv3Galaxy 1.0 1.0
+QuicksandGalaxy 1.0 1.0
+VsKoopaLv1Galaxy 1.0 1.0
+StaffRollGalaxy 1.0 1.0

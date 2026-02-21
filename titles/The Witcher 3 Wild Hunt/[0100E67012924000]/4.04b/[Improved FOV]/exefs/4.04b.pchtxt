@@ -1,0 +1,16 @@
+@nsobid-B151A224A429F9A73ABB05C5A3DE9468D92406EA
+
+# The Witcher 3 Wild Hunt [0100E67012924000] v4.04b - FOV
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Improved FOV
+
+@enabled
+001eb970 04102D1E // fov
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174
