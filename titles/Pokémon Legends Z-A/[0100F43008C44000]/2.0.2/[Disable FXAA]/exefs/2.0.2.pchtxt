@@ -1,0 +1,17 @@
+@nsobid-B1F12FD919EAE86AB8A978317677E64BCE443D1F
+
+# Pokémon Legends: Z-A [0100F43008C44000] v2.0.2 - FXAA OFF
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Disable FXAA
+
+@enabled
+00E6D134 E003271E // disable FXAA
+00E6D154 E003271E // disable FXAA
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

@@ -1,0 +1,20 @@
+@nsobid-34F8AA5F4A65BE02944378DA6703E82D
+
+# Sonic Racing: CrossWorlds [01006E001823C000] v1.31 - FOV
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Improved Field of View
+
+@enabled
+00E328C4 01D02E1E // fmov s1, #1.37500000      // FOV
+00E328C8 2ba6f514 // b          LAB_7104B9C174 // FOV
+04B9C174 0008211E // fmul s0, s0, s1           // FOV
+04B9C178 003002bd // str        s0,[x0, #0x230]// FOV
+04B9C17C c0035fd6 // ret                       // FOV
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

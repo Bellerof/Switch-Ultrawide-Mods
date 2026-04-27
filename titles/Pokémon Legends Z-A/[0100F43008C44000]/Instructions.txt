@@ -12,8 +12,17 @@ Ryujinx/Ryubing/Kenji - Right click the game and select "Open Mods Directory" an
 
 Switch - Convert it to IPS and put the files on atmosphere/exefs_patches/*MOD NAME*/xxx.ips
 
-Any suggetions or request can be done via my Ko-Fi profile.
+Any suggetions or requests can be done via my Ko-Fi profile.
 
 @Fl4sh_#9174
 https://github.com/Fl4sh9174
 https://Ko-fi.com/Fl4sh9174
+
+Current Dynamic FPS mod version: RC 3.0
+
+- Mod compatible with v2.0.1
+- Rewrote the dynamic mod to a better region in the memory, so it's more stable than the last one
+- Tweaked the rolling mechanic to avoid random softlock, but if still get stuck, just teleport.
+- Tweaked the Level of detail mod, increased the native anisotropic filtering to 16x
+
+All other mods updated to 2.0.2

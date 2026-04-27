@@ -1,0 +1,17 @@
+@nsobid-56BF85BD535413464CB75BB6C2683B6711E0BC0B
+
+# Tomodachi Life: Living the Dream [010051F0207B2000] v1.0.0 - 2580x1080
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 2580x1080 Docked
+// Values above 2580x1080 crash the game
+
+@enabled
+008eee2c 894281D2 // Width
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

@@ -1,0 +1,6 @@
+- All the resolution mods disable dynamic resolution by default.
+- Use one one resolution mod at a time.
+- The Disable Dof-Blur mod, remove all the Depth of field and blur in the scene and around the edges
+of the screen.
+- The 60 FPS mod included is the static version, and if you unlock the framerate, game will speed up.
+- The Dynamic mod is almost ready, but no ETA.

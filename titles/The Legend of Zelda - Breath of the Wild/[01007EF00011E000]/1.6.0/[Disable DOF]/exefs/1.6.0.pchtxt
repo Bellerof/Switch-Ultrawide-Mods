@@ -1,0 +1,17 @@
+@nsobid-8E9978D50BDD20B4C8395A106C27FFDE
+
+# The Legend of Zelda Breath of the Wild [01007EF00011E000] 1.6.0 - No DOF
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Disable Depth of Field effect
+
+@enabled
+018519d8 E103271E // disable dof
+01851a00 E103271E // disable dof
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

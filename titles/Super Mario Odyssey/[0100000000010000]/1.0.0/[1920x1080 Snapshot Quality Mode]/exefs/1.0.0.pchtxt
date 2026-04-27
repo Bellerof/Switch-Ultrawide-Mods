@@ -1,0 +1,23 @@
+@nsobid-3CA12DFAAF9C82DA064D1698DF79CDA1
+
+# Super Mario Odyssey [0100000000010000] v1.0.0 - 1080P
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 1920x1080 Docked Snapshot Quality Mode
+
+@enabled       
+0051537c 16F08052 // Main render width 1920
+00515380 17878052 // Main render height 1080
+00a583b4 08F08052 // Render width: use requested width
+00a583c8 09878052 // Render height: use requested height
+00a56574 68008052 // Force SnapShot graphics quality mode
+00a580f8 00102D1E // ShadowPrePassBufScale force 0.5 prepass buffer scale
+00a581c4 08F0A752 // ShadowFarScale = 1.0f
+00a581d0 08F0A752 // ShadowMapScale = 1.0f
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

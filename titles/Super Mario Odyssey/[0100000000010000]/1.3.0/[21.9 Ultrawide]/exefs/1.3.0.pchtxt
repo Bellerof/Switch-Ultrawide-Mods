@@ -8,10 +8,18 @@
 // 21:9 Aspect Ratio optimized for 3440x1440
 // Use stretch to window option
 
-@enabled
-0096816c CB719C52
-00968170 0B03A872
-0073de88 1F2003D5
+@enabled 
+0074d2d0 08AE8152 // al::getSceneFrameBufferMainAspect: width  = 1720
+0074d2d4 09B48052 // al::getSceneFrameBufferMainAspect: height = 720
+0074d2d8 0001221E // Convert width to float
+0074d2dc 2101221E // Convert height to float
+0074d2e0 0018211E // Aspect = 1720.0/720.0 = 2.38888888
+0074d2e4 C0035FD6 // Return
+006330d0 00D78052 // al::getLayoutDisplayWidth
+006330e4 005A8052 // al::getLayoutDisplayHeight
+006330f8 00D78052 // al::getLayoutDisplayWidth
+00633108 005A8052 // al::getLayoutDisplayHeight
+// 00e9b18c 00005742 // Fov/zoom? 40.0f default value
 @stop
 
 @Fl4sh_#9174

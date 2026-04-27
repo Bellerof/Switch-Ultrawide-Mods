@@ -1,0 +1,23 @@
+@nsobid-A6CE40DC3AEDB1BECACD2F1FF4515307C7F2E630000000000000000000000000
+
+# Kirby and the Forgotten Land [01004D300C5AE000] 1.1.0 - 4K
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 3840x2160 Docked
+
+@enabled
+// 00746358 04F08052 // mov  w4,0xf00 // mess text and lighting
+// 0074635c 05878052 // mov  w5,0x870 // mess text and lighting
+// 0074643c 04E08152 // mov  w4,0xf00 // need more testing
+// 00746440 050E8152 // mov  w5,0x870 // need more testing
+007469f0 04E08152 // mov  w4,0xf00 // Internal rendering
+007469f4 050E8152 // mov  w5,0x870 // Internal rendering
+00747b7c 08E081D2 // mov  x8,#0xf00
+00747b80 080EC1F2 // movk x8,#0x870, LSL #32
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

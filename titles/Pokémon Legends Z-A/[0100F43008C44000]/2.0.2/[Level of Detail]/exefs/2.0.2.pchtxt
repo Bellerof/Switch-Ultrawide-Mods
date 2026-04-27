@@ -1,0 +1,17 @@
+@nsobid-B1F12FD919EAE86AB8A978317677E64BCE443D1F
+
+# Pokémon Legends: Z-A [0100F43008C44000] v2.0.2 - LOD + Anisotropic
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Improved Level of detail
+
+@enabled
+018B58E4 00103E1E // Lodbias
+018B5F68 0010241E // Anisotropic filtering
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

@@ -1,0 +1,18 @@
+@nsobid-A6CE40DC3AEDB1BECACD2F1FF4515307C7F2E630000000000000000000000000
+
+# Kirby and the Forgotten Land [01004D300C5AE000] 1.1.0 - LOD
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Improved Lodbias and x16 Anisotropic Filtering
+
+@enabled
+0051c5c4 00103E1E // Lodbias
+0051C62C 1F2003D5 // Anisotropic Filtering
+0051C63C 0010261E // Anisotropic Filtering
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

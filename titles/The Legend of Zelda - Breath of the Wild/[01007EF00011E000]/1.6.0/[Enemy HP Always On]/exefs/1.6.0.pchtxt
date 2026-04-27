@@ -1,0 +1,16 @@
+@nsobid-8E9978D50BDD20B4C8395A106C27FFDE
+
+# The Legend of Zelda Breath of the Wild [01007EF00011E000] 1.6.0 - HP BAR
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Health point bar always on
+
+@enabled
+0118179c 2A008052
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

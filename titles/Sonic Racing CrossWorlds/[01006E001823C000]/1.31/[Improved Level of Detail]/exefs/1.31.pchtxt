@@ -1,0 +1,16 @@
+@nsobid-34F8AA5F4A65BE02944378DA6703E82D
+
+# Sonic Racing: CrossWorlds [01006E001823C000] v1.31 - LODBIAS
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Improved Level of detail
+
+@enabled
+00DD7CE8 00103A1E
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174
