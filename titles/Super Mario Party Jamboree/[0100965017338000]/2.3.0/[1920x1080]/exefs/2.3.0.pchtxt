@@ -1,0 +1,24 @@
+@nsobid-D70CE1726C979E45ED4200E9C2B23B2A258FDC18
+
+# Super Mario Party Jamboree [0100965017338000] v2.3.0 - 1080P
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 1920x1080 Docked
+// 1280x720 Handheld
+
+@enabled
+001db378 02A080D2 // SetRenderingResolution3d
+001db37c 08F080D2 // SetRenderingResolution3d
+001db380 025AC0F2 // SetRenderingResolution3d
+001db384 0887C0F2 // SetRenderingResolution3d
+001dbf38 09A080D2 // SetRenderingResolution3d
+001dbf3c 0BF080D2 // SetRenderingResolution3d
+001dbf40 095AC0F2 // SetRenderingResolution3d
+001dbf44 0B87C0F2 // SetRenderingResolution3d
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://ko-fi.com/fl4sh9174

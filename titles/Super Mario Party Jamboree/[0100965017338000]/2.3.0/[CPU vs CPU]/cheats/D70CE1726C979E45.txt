@@ -1,0 +1,17 @@
+[CPU vs CPU ZR + R + Dpad Up v2.3.0]
+80002280                 
+04000000 00155870 00000001
+20000000
+
+[Player vs CPU ZR + R + Dpad Down v2.3.0]
+80008280                      
+04000000 00155870 00000000
+20000000
+
+[Activate the cheat before hitting a dice block for the first time after entering the game]
+[You can regain control of the character anytime by pressing ZR + R + Dpad Down]
+[Special thanks to iVitrol for teaching me how to find the pattern in CE]
+[You need both mod and cheat to make it work]
+[Cheat works on all emulators now]
+[Tested on Mario Party mode only]
+[Made by Fl4sh_9174]

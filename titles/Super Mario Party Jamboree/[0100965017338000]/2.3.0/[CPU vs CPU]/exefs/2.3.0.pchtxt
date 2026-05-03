@@ -1,0 +1,31 @@
+@nsobid-D70CE1726C979E45ED4200E9C2B23B2A258FDC18
+
+# Super Mario Party Jamboree [0100965017338000] v2.3.0 - CPU vs CPU
+
+@flag print_values
+@flag offset_shift 0x100
+
+// CPU vs CPU
+// Cheat must be activated alongside this mod
+
+@enabled
+0021DFB8 23defc17 // B 0x7100155844 - branch to codecave
+00155840 C0035FD6 // unused/safety ret before codecave
+00155844 E827BFA9 // stp x8, x9, [sp, #-16]!
+00155848 08000090 // adrp x8, 0x7100155000
+0015584c 097148B9 // ldr w9, [x8, #0x870] - read control flag
+00155850 3F050071 // cmp w9, #1
+00155854 61000054 // b.ne 00155860 - if flag != 1, run original
+00155858 20008052 // mov w0, #1 - if flag == 1, force w0 to 1
+0015585c 02000014 // b 00155864 - skip original
+00155860 004C40B9 // original: ldr w0, [x0, #0x4c]
+00155864 007508B9 // str w0, [x8, #0x874] - log/result
+00155868 E827C1A8 // ldp x8, x9, [sp], #16
+0015586c C0035FD6 // ret
+00155870 00000000 // control flag
+00155874 00000000 // log/result
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://ko-fi.com/fl4sh9174

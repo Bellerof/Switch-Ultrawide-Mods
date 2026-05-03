@@ -1,0 +1,24 @@
+@nsobid-D70CE1726C979E45ED4200E9C2B23B2A258FDC18
+
+# Super Mario Party Jamboree [0100965017338000] v2.3.0 - 8K
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 7680x4320 Docked
+// Use Extended Memory Layout
+
+@enabled
+005827c0 081CC2D2 // viewport                
+005827c4 09C08352 // viewport                
+001db37c 08C083D2 // SetRenderingResolution3d
+001db384 081CC2F2 // SetRenderingResolution3d
+015d3710 e0100000 // SetRenderingResolution3d
+015d371c 001e0000 // SetRenderingResolution3d
+015d3aac 001e0000 // SetRenderingResolution3d
+015d4aa8 e0100000 // SetRenderingResolution3d
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://ko-fi.com/fl4sh9174

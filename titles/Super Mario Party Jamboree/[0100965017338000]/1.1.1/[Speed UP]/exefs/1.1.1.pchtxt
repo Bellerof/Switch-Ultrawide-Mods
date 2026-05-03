@@ -1,0 +1,59 @@
+@nsobid-EDBA963A92FA0C6811974A81A8B0E6941D8FFCE4
+
+# Super Mario Party Jamboree [0100965017338000] v1.1.1 - Speed UP
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Speed UP the game!
+
+@enabled
+00987e34 0b000014 // make entire game static speed
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://ko-fi.com/fl4sh9174
+
+41CDCD6500000000
+
+0000a0c8 00102C1E // (120FPS movespeed Fix for Bowser Kaboom Squad Maingame, disable this to play Koopathlon)
+0000a108 00102C1E // (120FPS movespeed Fix for Bowser Kaboom Squad Minigame, disable this to play Koopathlon)
+
+001958cc 3B119152 // s1 movespeed
+001958d0 1B61A772 // s1 movespeed
+001958e0 6103271E // s1 movespeed
+
+00987e34 0b000014 // make entire game static
+
+00987dd0 29008052 // make bowsergame dynamic also
+
+00987ddc 16000014 // make bowsergame dynamic
+
+00987e08 0A5EA852 // change deltatime of bowsergame
+
+0080d12c 086EA852 // control gamespeed and bowsergame deltatime
+
+009841c4 1F2003D5 // lock deltatime to 60fps(0.01666666754)speedup the game above it
+
+009841c4 1F2003D5 // lock deltatime to 60fps(0.01666666754)
+
+0120684c 0110201E // change the 96034807E4 to 120fps
+
+working cheat to change deltatime:
+80002100                 
+04000000 009841c4 D503201F
+04000000 01bc5d0c 3c088889
+20000000
+
+00984144 28119152 // change deltatime of 01bc5d24
+00984154 0881A772 // change deltatime of 01bc5d24
+00984158 0001271E // change deltatime of 01bc5d24
+
+AR:
+00524ac0 894281D2 // hud ar
+00524b9c 86428152 // hud ar
+00845f2c C8719C52 // plaza hall ar
+00845f30 0803A872 // plaza hall ar
+00845a34 C9719C52 // main game ar
+00845a38 0903A872 // main game ar

@@ -1,0 +1,20 @@
+@nsobid-D70CE1726C979E45ED4200E9C2B23B2A258FDC18
+
+# Super Mario Party Jamboree [0100965017338000] v2.3.0 - 120FPS
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 120FPS
+
+@enabled
+00883F88 15008052
+00988668 0A0F8052
+00988688 0A5EA852
+0000A0C8 00102C1E // (120FPS movespeed Fix for Bowser Kaboom Squad Maingame, disable this to play Koopathlon)
+0000A108 00102C1E // (120FPS movespeed Fix for Bowser Kaboom Squad Minigame, disable this to play Koopathlon)
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://ko-fi.com/fl4sh9174
