@@ -1,0 +1,46 @@
+@nsobid-B424BE150A8E7D78701CBE7A439D9EBF
+
+# SUPER MARIO ODYSSEY [0100000000010000] v1.3.0 - v1.4.0 - v1.4.1 - 21:9 Ultrawide Adjusted HUD
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 21:9 Aspect Ratio optimized for 3440x1440
+// Use stretch to window option
+// BootLoading Joy-Con pane fix uses codecave at 014b0fa0.
+
+@enabled
+0074d2d0 08AE8152 // al::getSceneFrameBufferMainAspect: width  = 1720
+0074d2d4 09B48052 // al::getSceneFrameBufferMainAspect: height = 720
+0074d2d8 0001221E // Convert width to float
+0074d2dc 2101221E // Convert height to float
+0074d2e0 0018211E // Aspect = 1720.0/720.0 = 2.38888888
+0074d2e4 C0035FD6 // Return
+006330d0 00D78052 // al::getLayoutDisplayWidth
+006330e4 005A8052 // al::getLayoutDisplayHeight
+006330f8 00D78052 // al::getLayoutDisplayWidth
+00633108 005A8052 // al::getLayoutDisplayHeight
+// 0187fcec 00005742 // Fov/zoom? 40.0f default value
+00908bcc F5A02E14 // Hook nn::ui2d::Pane::Pane width load/copy for BootLoading Joy-Con panes
+014b0fa0 6BBA40B9 // ldr w11, [x19, #0xb8] ; cached Pane name first 4 bytes
+014b0fa4 0C2A8D52 // mov w12, #0x6950
+014b0fa8 6C4CA972 // movk w12, #0x4a63, lsl #16 ; "PicJ"
+014b0fac 7F010C6B // cmp w11, w12
+014b0fb0 00010054 // b.eq set_width_scale
+014b0fb4 0C2A8D52 // mov w12, #0x6950
+014b0fb8 6CECA972 // movk w12, #0x4f63, lsl #16 ; "PicO"
+014b0fbc 7F010C6B // cmp w11, w12
+014b0fc0 80000054 // b.eq set_width_scale
+014b0fc4 280340B9 // original: ldr w8, [x25]
+014b0fc8 03000014 // b store_width
+014b0fcc 1F2003D5 // nop
+014b0fd0 08E8A752 // w8 = 0x3f400000 ; 0.75f
+014b0fd4 684A00B9 // original: str w8, [x19, #0x48]
+014b0fd8 280740B9 // original: ldr w8, [x25, #0x4]
+014b0fdc 684E00B9 // original: str w8, [x19, #0x4c]
+014b0fe0 FF5ED117 // return to 00908bdc
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

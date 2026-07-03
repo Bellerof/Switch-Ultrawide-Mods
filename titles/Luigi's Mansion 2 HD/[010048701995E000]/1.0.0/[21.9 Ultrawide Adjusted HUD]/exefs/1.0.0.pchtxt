@@ -1,0 +1,26 @@
+@nsobid-A71EC0B9FF4F54CB41A5DE4CF7472D899EDCC561
+
+# Luigis Mansion 2 HD [010048701995E000] v1.0.0 - 21:9
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 21:9 Aspect Ratio Optimized for 3440x1440
+// Use stretch to window option
+// Hud is adjuted to 21:9
+// Can be used with any resolution mod
+
+@enabled
+001743C0 50009FE5 // HUD load X scale literal from 00174418
+001743C4 00008DE5 // HUD store X scale to matrix [sp,#0x00]
+001743C8 FE05A0E3 // HUD Y scale keep 1.0
+001743CC 14008DE5 // HUD store Y scale to matrix [sp,#0x14]
+001743D0 0201A0E3 // HUD X translation keep -0.0
+001743D4 30008DE5 // HUD store X translation to matrix [sp,#0x30]
+001743F8 14009FE5 // HUD preserve tail pointer load after reusing 00174418 as scale literal
+00174418 FA823E3F // HUD X scale 1.0 > 0.74418605 ; 16:9 / 2.38888888
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

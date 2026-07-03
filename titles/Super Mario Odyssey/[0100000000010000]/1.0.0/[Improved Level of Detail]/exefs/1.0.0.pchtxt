@@ -11,6 +11,7 @@
 00aea0b8 00103E1E // Lodbias
 00aea120 1F2003D5 // Anisotropic filtering
 00aea128 0010261E // Anisotropic filtering
+00b92318 08000014 // Disable fxaa
 @stop
 
 @Fl4sh_#9174

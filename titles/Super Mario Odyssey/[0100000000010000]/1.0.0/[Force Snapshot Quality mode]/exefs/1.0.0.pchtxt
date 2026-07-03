@@ -1,0 +1,16 @@
+@nsobid-3CA12DFAAF9C82DA064D1698DF79CDA1
+
+# Super Mario Odyssey [0100000000010000] v1.0.0 - SnapShot Quality Mode
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Force SnapShot graphics quality mode
+
+@enabled     
+00a56574 68008052 // Force SnapShot graphics quality mode
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

@@ -1,0 +1,27 @@
+@nsobid-635FE25C7CB69847F41B49F19CD9AA8942BF1B50
+
+# Super Mario 3D World + Bowser's Fury [010028600EBDA000] v1.2.2 - 21:9
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 21:9 Aspect Ratio optimized for 3440x1440
+// Use stretch to window option
+
+@enabled
+00901640 C1719C52 // mov  w1, #0xe38e 
+00901644 0103A872 // movk w1, #0x4018, lsl #16
+00901648 2000271E // fmov s0, w1 
+0090164c 002401bd // str s0,[x0, #0x124]
+00901650 002801bd // str s0,[x0, #0x128]
+00901654 c0035fd6 // ret
+009701C0 0370201E // fmov s3, #2.37500000 
+009237D8 C9719CD2 // mov x9, #0xe38e 
+009237DC 0903A8F2 // movk x9, #0x4018, lsl #16 
+008BD10C C8719C52 // mov w8, #0xe38e 
+008BD110 0803A872 // movk w8, #0x4018, lsl #16 
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

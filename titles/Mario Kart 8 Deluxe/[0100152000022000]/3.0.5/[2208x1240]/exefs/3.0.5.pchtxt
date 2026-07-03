@@ -8,8 +8,10 @@
 // 2208x1204 Docked
 
 @enabled
-00704ABC 68F2A752
-00704AC4 69F2A752
+// 00704ABC 48F5A752 // Scaling factor
+// 00704AC4 49F5A752 // Scaling factor
+0088A514 001481D2 // Width 
+0088A518 009BC0F2 // Height
 @stop
 
 @Fl4sh_#9174

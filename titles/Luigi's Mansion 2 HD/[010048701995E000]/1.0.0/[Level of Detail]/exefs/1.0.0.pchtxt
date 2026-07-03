@@ -8,7 +8,8 @@
 // Level of Detail
 
 @enabled
-006c693c 0E0ABAEE
+006c693c 000ABFEE // Lodbias
+006c692c 000AB3EE // Anisotropic Filtering 16x
 @stop
 
 @Fl4sh_#9174

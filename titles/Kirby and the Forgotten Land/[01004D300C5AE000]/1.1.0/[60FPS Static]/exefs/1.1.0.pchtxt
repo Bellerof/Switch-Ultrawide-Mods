@@ -8,7 +8,8 @@
 // 60 FPS Static version (Unlocking the FPS will speedup the game)
 
 @enabled
-0069d870 3FC102F8 // 60fps unlocked
+00532c48 37010014 // 60fps unlocked
+007f5eac 11000014 // 60fps unlocked
 @stop
 
 @Fl4sh_#9174

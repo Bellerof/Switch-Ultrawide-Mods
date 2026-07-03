@@ -1,0 +1,50 @@
+@nsobid-A71EC0B9FF4F54CB41A5DE4CF7472D899EDCC561
+
+# Luigis Mansion 2 HD [010048701995E000] v1.0.0 - 4K
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 3840x2160 Docked
+
+@enabled
+006D2EB8 001F00E3 // active render width fallback 1920 > 3840
+006D2EC0 701800E3 // active render height fallback 1080 > 2160
+0014CE38 701800E3 // init display fallback height 1080 > 2160
+0014CE3C 003F00E3 // init display fallback width 1920 > 3840
+004BC4B4 002F00E3 // display config base width 1920 > 3840
+004BC4B8 703800E3 // display config base height 1080 > 2160
+004BC514 000F00E3 // display config fallback width 1920 > 3840
+004BC51C 700800E3 // display config fallback height 1080 > 2160
+0061596C 001F00E3 // MovieRenderTarget width 1920 > 3840
+00615970 702800E3 // MovieRenderTarget height 1080 > 2160
+00675D3C 002F00E3 // default video/offscreen width 1920 > 3840
+00675D44 705800E3 // default video/offscreen height 1080 > 2160
+004BCC80 7D0680E2 // CDEC backing payload 0x06400000 100 MB > 0x07D00000 125 MB
+0014CDEC FA07A0E3 // graphics init arena 0x03200000 50 MB > 0x03E80000 62.5 MB
+004BCC8C 9D0551E3 // large allocator cap compare 0x1F400000 500 MB > 0x27400000 628 MB
+004BCC90 9D15A023 // large allocator cap value 0x1F400000 500 MB > 0x27400000 628 MB
+006C5940 0A14A0E3 // graphics pool 0x08000000 128 MB > 0x0A000000 160 MB
+006C8944 281342E3 // graphics pool mode 0 high16 0x1C200000 450 MB > 0x23280000 562.5 MB
+006C8954 001C0003 // graphics pool mode 1 low16 0x238A7000 > 0x2C6D0C00
+006C8958 6D1C4203 // graphics pool mode 1 high16 0x238A7000 568.65 MB > 0x2C6D0C00 710.82 MB
+006C8964 001C0F03 // graphics pool mode 2 low16 0x2B3B3000 > 0x3609FC00
+006C8968 09164303 // graphics pool mode 2 high16 0x2B3B3000 691.70 MB > 0x3609FC00 864.62 MB
+006C8A7C 005842E3 // render-target allocator mode 0 high16 0x1C200000 450 MB > 0x28000000 640 MB
+006C8A84 00500003 // render-target allocator mode 1 low16 0x7000 > 0x0000
+006C8A88 00504303 // render-target allocator mode 1 high16 0x238A7000 568.65 MB > 0x30000000 768 MB
+006C8A94 00500003 // render-target allocator mode 2 low16 0x3000 > 0x0000
+006C8A98 00504403 // render-target allocator mode 2 high16 0x2B3B3000 691.70 MB > 0x40000000 1024 MB
+00675D24 0203A0E3 // video/offscreen buffer 0x00A00000 10 MB > 0x08000000 128 MB
+006BE5F0 0A05A0E3 // global allocator block 0x02000000 32 MB > 0x02800000 40 MB
+006BE604 0A15A0E3 // global allocator block 0x02000000 32 MB > 0x02800000 40 MB
+00020E00 0102A0E3 // local render/resource budget 0x01000000 16 MB > 0x10000000 256 MB
+0069CFA8 0303A0E3 // fixed allocator block 0x06000000 96 MB > 0x0C000000 192 MB
+0069CFC4 0323A0E3 // matching init/clear size 0x06000000 96 MB > 0x0C000000 192 MB
+0017A680 000001E3 // ShadowMap0 packed width 0x1000/4096
+0017A684 000041E3 // ShadowMap0 packed height 0x1000/1096
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

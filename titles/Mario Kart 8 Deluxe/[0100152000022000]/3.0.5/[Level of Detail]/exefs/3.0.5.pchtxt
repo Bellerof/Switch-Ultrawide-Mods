@@ -8,8 +8,10 @@
 // Improved lodbias
 
 @enabled
-00A65DD8 00103E1E
-00641EA0 0010381E
+00A65DD8 00103E1E // Lodbias
+00641EA0 0010381E // Lodbias
+00a65e40 1F2003D5 // Anisotropic Filtering 16x
+00a65e48 0010261E // Anisotropic Filtering 16x
 @stop
 
 @Fl4sh_#9174

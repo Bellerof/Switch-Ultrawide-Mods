@@ -6,18 +6,22 @@
 @flag offset_shift 0x100
 
 // 21:9 Aspect Ratio optimized for 3440x1440
-// Use strecth to window option
+// Use stretch to window option
 
 @enabled
-00901638 DC719C52
-0090163c 1C03A872
-00901640 8003271E
-009701B0 0370201E
-009237C8 C9719CD2
-009237CC 0903A8F2
-008BD0FC C8719C52
-008BD100 0803A872
+00901630 C1719C52 // mov  w1, #0xe38e 
+00901634 0103A872 // movk w1, #0x4018, lsl #16
+00901638 2000271E // fmov s0, w1 
+0090163c 002401bd // str s0,[x0, #0x124]
+00901640 002801bd // str s0,[x0, #0x128]
+00901644 c0035fd6 // ret
+009701B0 0370201E // fmov s3, #2.37500000  
+009237C8 C9719CD2 // mov x9, #0xe38e  
+009237CC 0903A8F2 // movk x9, #0x4018, lsl #16  
+008BD0FC C8719C52 // mov w8, #0xe38e  
+008BD100 0803A872 // movk w8, #0x4018, lsl #16  
 @stop
 
 @Fl4sh_#9174
 https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

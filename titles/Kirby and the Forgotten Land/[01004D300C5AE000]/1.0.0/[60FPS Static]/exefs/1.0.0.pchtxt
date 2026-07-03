@@ -1,0 +1,17 @@
+@nsobid-D9BA7DB72FFAFECD07F5F5535DEC05734E59BCE1
+
+# Kirby and the Forgotten Land [01004D300C5AE000] 1.0.0 - 60 FPS
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 60 FPS Static version (Unlocking the FPS will speedup the game)
+
+@enabled
+00532524 35010014 // 60fps unlocked
+007F0D1C 11000014 // 60fps unlocked
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

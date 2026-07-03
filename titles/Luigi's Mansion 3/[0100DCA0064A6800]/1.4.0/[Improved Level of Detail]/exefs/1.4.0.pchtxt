@@ -8,7 +8,10 @@
 // Improved Level of Detail
 
 @enabled
-007c82fc 00D0351E
+007c82fc 00103E1E // Lodbias
+007c835c 1F2003D5 // Anistropic Filtering 16x
+007c8370 1F2003D5 // Anistropic Filtering 16x
+007c8384 0010261E // Anistropic Filtering 16x
 @stop
 
 @Fl4sh_#9174

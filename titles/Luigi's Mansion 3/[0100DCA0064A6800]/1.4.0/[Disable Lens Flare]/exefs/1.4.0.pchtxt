@@ -1,16 +1,16 @@
 @nsobid-79E5950FFA85ACF63E28C9AEC051EAC27D6F7F8D
 
-# Luigi's Mansion 3 [0100DCA0064A6000] v1.4.0 - Disable Lens Flare
+# Luigis Mansion 3 [0100DCA0064A6800] v1.4.0 - Lens flare OFF
 
 @flag print_values
 @flag offset_shift 0x100
 
-// disables lens flare of the flashlight
+// Lens Flare Effect Disabled
 
 @enabled
-0076DAE8 E8620090
-0076DAEC 0E7D44BD
+0076daec EE03271E
 @stop
 
-@theboy181
-https://linktr.ee/theboy181
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

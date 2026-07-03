@@ -1,0 +1,41 @@
+@nsobid-79E5950FFA85ACF63E28C9AEC051EAC27D6F7F8D
+
+# Luigis Mansion 3 [0100DCA0064A6800] v1.4.0 - DOF
+
+@flag print_values
+@flag offset_shift 0x100
+
+// DOF BLUR Disabled
+
+@enabled
+0043af84 00008052
+// 0043AF14 FFFF06A9 // DoFSet: zero fields copied from lVar4+0x28 / lVar4+0x30
+// 0043AF18 FFFF05A9 // DoFSet: zero fields copied from lVar4+0x18 / lVar4+0x20
+// 0043AF24 FFFF08A9 // DoFSet: zero fields copied from lVar4+0x48 / lVar4+0x50
+// 0043AF2C FFFF07A9 // DoFSet: zero fields copied from lVar4+0x38 / lVar4+0x40
+// 0043AC58 FF7B00B9 // HorizontalBlur: local_88 flag = 0
+// 0043AC5C FF430239 // HorizontalBlur: local_70 byte flag = 0
+// 0043AD08 FF7B00B9 // VerticalBlur: local_88 flag = 0
+// 0043AD0C FF430239 // VerticalBlur: local_70 byte flag = 0
+// 0043ADCC FF7B00B9 // NearHorizontalBlur: local_88 flag = 0
+// 0043ADD0 FF430239 // NearHorizontalBlur: local_70 byte flag = 0
+// 0043AE7C FF7B00B9 // NearVerticalBlur: local_88 flag = 0
+// 0043AE80 FF430239 // NearVerticalBlur: local_70 byte flag = 0
+// 0043AF44 FF7B00B9 // DoFView: final local_88 flag = 0
+// 01025180 C0035FD6 // 7101025184-7101028080 codecave
+// 007F9E54 CCAC2014 // Hook menu DOF source writer to codecave 01025184
+// 01025184 5F0001F1 // cmp x2,#0x40
+// 01025188 E1000054 // b.ne 010251A4 // not DOF source offset, use original write
+// 0102518C 7FFC3871 // cmp w3,#0xE3F
+// 01025190 A1000054 // b.ne 010251A4 // not menu DOF source object, use original write
+// 01025194 10102C1E // fmov s16,#0.5 // menu DOF strength multiplier
+// 01025198 C608301E // fmul s6,s6,s16 // scale only this DOF source write
+// 0102519C 066822BC // str s6,[x0,x2] // write reduced DOF source
+// 010251A0 02000014 // b 010251A8 // skip duplicate original write
+// 010251A4 066822BC // str s6,[x0,x2] // original write
+// 010251A8 2C53DF17 // b 007F9E58 // return after original instruction
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

@@ -1,0 +1,17 @@
+@nsobid-A1EFE1B6BBB0328F702F74B046EA127580C93FAB
+
+# Tomodachi Life: Living the Dream [010051F0207B2000] v1.0.2 - Lodbias
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Level of Detail
+
+@enabled
+0017353c 00103E1E // Lodbias
+00173598 0010261E // Anisotropic Filtering
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

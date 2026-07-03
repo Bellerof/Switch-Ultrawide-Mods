@@ -1,0 +1,26 @@
+@nsobid-9B9E182991F3F5B5F21746646854FA803B6D39A5000000000000000000000000
+
+# Diablo III Eternal Collection [01001B300B9BE000] v2.7.6.90885 - 32:9
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 32:9 Aspect Ratio optimized for 5120x1440
+// Use stretch to window option
+// HUD is adjusted to 32:9
+// USE 8GB DRAM MEMORY LAYOUT
+
+@enabled
+00158488 14008252 // Shadow resolution
+00eb0b10 398e6340 // 3.55555555
+000E7868 2AC79152 // Hud Elements Aspect Ratio
+000E786C 6A0CA872 // Hud Elements Aspect Ratio
+000E7858 088082D2 // Width  Docked
+000E7860 08B4C0F2 // Height Docked
+00276A78 F5031B32 // Force HUD/layout mask w21 = 0x20
+00A36B34 1300A852 // 0x17400000 -> 0x40000000, 372 MiB -> 1024 MiB
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

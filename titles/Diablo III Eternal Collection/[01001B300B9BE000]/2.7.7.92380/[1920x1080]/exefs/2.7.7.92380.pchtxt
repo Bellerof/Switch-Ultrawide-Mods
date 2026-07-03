@@ -1,0 +1,18 @@
+@nsobid-2607A74F5DF7754CC0357B5DF7E496931355D8CA
+
+# Diablo III Eternal Collection [01001B300B9BE000] v2.7.7.92380 - 1080P
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 1920x1080 Docked
+
+@enabled
+000e7858 08F080D2 // Width  Docked
+000e7860 0887C0F2 // Height Docked
+00276A78 F5031B32 // Force HUD/layout mask w21 = 0x20
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

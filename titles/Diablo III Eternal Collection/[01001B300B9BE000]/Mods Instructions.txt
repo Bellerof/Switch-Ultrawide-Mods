@@ -1,0 +1,6 @@
+- Use one resolution mod at a time
+- 5160x2160 mod requires 8GB Dram Layout settings on emulators
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

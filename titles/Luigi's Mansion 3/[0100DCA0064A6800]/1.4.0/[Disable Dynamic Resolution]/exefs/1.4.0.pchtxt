@@ -1,14 +1,22 @@
 @nsobid-79E5950FFA85ACF63E28C9AEC051EAC27D6F7F8D
 
-# Luigi's Mansion 3 [0100DCA0064A6000] v1.4.0 - Disable Dynaminc Resolution
+# Luigis Mansion 3 [0100DCA0064A6800] v1.4.0 - Dynamic res OFF
 
 @flag print_values
 @flag offset_shift 0x100
 
-// disables resolution scaling in docked mode
+// Dynamic Resolution Disabled, Scaling set tp 1.0
 
 @enabled
-013C95A8 0000803f
+0045ddbc 0D102E1E // DR
+00b81bf8 00102E1E // Scaling
+0086745c 01102E1E // Scaling
+008674c0 01102E1E // Scaling
+00b81884 01102E1E // Scaling
+001d1968 03102E1E // Scaling
+001d0cec 03102E1E // Scaling
 @stop
 
-@theboy181 - https://linktr.ee/theboy181
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

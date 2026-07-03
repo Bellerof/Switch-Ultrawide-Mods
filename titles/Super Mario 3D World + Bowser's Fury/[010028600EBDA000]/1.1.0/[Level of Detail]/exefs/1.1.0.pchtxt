@@ -8,9 +8,11 @@
 // Level of Detail
 
 @enabled
-006806c4 00D0351E
-00765dc0 00D0351E
+006806c4 00103E1E // Lodbias
+0068072c 1F2003D5 // Anisotropic Filtering 16x
+00680734 0010261E // Anisotropic Filtering 16x
 @stop
 
 @Fl4sh_#9174
 https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

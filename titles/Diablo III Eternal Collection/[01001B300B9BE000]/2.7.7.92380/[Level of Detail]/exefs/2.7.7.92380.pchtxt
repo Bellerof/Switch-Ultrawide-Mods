@@ -1,0 +1,19 @@
+@nsobid-2607A74F5DF7754CC0357B5DF7E496931355D8CA
+
+# Diablo III Eternal Collection [01001B300B9BE000] v2.7.7.92380 - LOD
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Improved level of Detail
+
+@enabled 
+000ee8a8 0910311E // Lodbias
+000ee8b0 0A10311E // Lodbias
+000ee8b4 0B10311E // Lodbias
+000ee8b8 0C10311E // Lodbias
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

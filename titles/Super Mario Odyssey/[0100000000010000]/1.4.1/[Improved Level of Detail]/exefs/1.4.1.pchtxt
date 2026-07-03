@@ -1,6 +1,6 @@
 @nsobid-B424BE150A8E7D78701CBE7A439D9EBF
 
-# SUPER MARIO ODYSSEY [0100000000010000] v1.4.1 - LOD
+# SUPER MARIO ODYSSEY [0100000000010000] v1.3.0-v1.4.1- LOD
 
 @flag print_values
 @flag offset_shift 0x100
@@ -11,6 +11,7 @@
 008fe52c 00103E1E // Lodbias
 008fe594 1F2003D5 // Anisotropic filtering
 008fe59c 0010261E // Anisotropic filtering
+009BD3A8 08000014 // Disable fxaa
 @stop
 
 @Fl4sh_#9174

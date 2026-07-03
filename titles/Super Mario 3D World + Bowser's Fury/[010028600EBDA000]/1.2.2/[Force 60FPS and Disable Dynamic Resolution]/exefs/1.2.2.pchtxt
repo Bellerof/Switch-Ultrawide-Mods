@@ -1,0 +1,16 @@
+@nsobid-635FE25C7CB69847F41B49F19CD9AA8942BF1B50
+
+# Super Mario 3D World + Bowser's Fury [010028600EBDA000] v1.2.2 - Force 60FPS
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Force 60FPS and Disable Dynamic Resolution
+
+@enabled
+003FCCBC 29008052
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

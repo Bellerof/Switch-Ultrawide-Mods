@@ -1,0 +1,51 @@
+@nsobid-3CA12DFAAF9C82DA064D1698DF79CDA1
+
+# SUPER MARIO ODYSSEY [0100000000010000] v1.0.0 - 21:9 Ultrawide Adjusted HUD
+
+@flag print_values
+@flag offset_shift 0x100
+
+// 21:9 Aspect Ratio optimized for 3440x1440
+// Use stretch to window option
+// BootLoading Joy-Con pane fix uses codecave at 025a767c.
+
+@enabled
+009cf324 08AE8152 // al::getSceneFrameBufferMainAspect: width  = 1720
+009cf328 09B48052 // al::getSceneFrameBufferMainAspect: height = 720
+009cf32c 0001221E // Convert width to float
+009cf330 2101221E // Convert height to float
+009cf334 0018211E // Aspect = 1720.0/720.0 = 2.38888888
+009cf338 C0035FD6 // Return
+00a63c90 00D78052 // al::getLayoutDisplayWidth
+00a63ca0 005A8052 // al::getLayoutDisplayHeight
+00a63cb0 00D78052 // al::getLayoutDisplayWidth
+00a63cbc 005A8052 // al::getLayoutDisplayHeight
+// 0187fcec 00005742 // Fov/zoom? 40.0f default value
+00b078b0 737F6A14 // Hook nn::ui2d::Pane::Pane width load/copy for BootLoading Joy-Con panes
+025a767c AA320091 // add x10, x21, #0xc ; pane name
+025a7680 4B0140F9 // ldr x11, [x10]
+025a7684 4C020010 // adr x12, "PicJoyCo"
+025a7688 8C0140F9 // ldr x12, [x12]
+025a768c 7F010CEB // cmp x11, x12
+025a7690 E0000054 // b.eq set_width_scale
+025a7694 4C020010 // adr x12, "PicOther"
+025a7698 8C0140F9 // ldr x12, [x12]
+025a769c 7F010CEB // cmp x11, x12
+025a76a0 60000054 // b.eq set_width_scale
+025a76a4 280340B9 // original: ldr w8, [x25]
+025a76a8 03000014 // b store_width
+025a76ac 1F2003D5 // nop
+025a76b0 08E8A752 // w8 = 0x3f400000 ; 0.75f
+025a76b4 684A00B9 // original: str w8, [x19, #0x48]
+025a76b8 280740B9 // original: ldr w8, [x25, #0x4]
+025a76bc 684E00B9 // original: str w8, [x19, #0x4c]
+025a76c0 80809517 // return to nn::ui2d::Pane::Pane+0x26c
+025a76cc 5069634A // "PicJ"
+025a76d0 6F79436F // "oyCo"
+025a76dc 5069634F // "PicO"
+025a76e0 74686572 // "ther"
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174
